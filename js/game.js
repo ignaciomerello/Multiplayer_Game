@@ -5,7 +5,7 @@ const CambiaPantalla = (valor) => {
     let faseDestino = "fase" + valor;
 
     //A continuación creo un array con todas fases.
-    let arrayFases = ["fase1","fase2","fase3","fase4"];
+    let arrayFases = ["fase1","fase2","fase3","fase4","fase5"];
 
     //El siguiente paso es incluir en arrayfases, todas las fases MENOS la de destino, para ello usamos
     //filter.
@@ -39,8 +39,12 @@ const goku = new Fighter("Goku", 25, 100);
 const superman = new Fighter("Superman", 50, 125);
 const docManhattan = new Fighter("Dr Mantahhan", 99, 200);
 const enki = new Fighter("Enki", 10, 50);
+const freak = new Fighter("Freak Guy", 200, 300);
+const sheep = new Fighter("Sheep", 0, 0);
+// const covid = new Fighter("COVID-19", 1000, 1000);
 
-const fighters = [goku,superman,docManhattan,enki];
+
+const fighters = [goku,superman,docManhattan,enki,freak,sheep];
 
 console.log(goku.life);
 

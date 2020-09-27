@@ -8,7 +8,7 @@
 <body>
 
 <div class="container">
-    <!-- PANTALLA DE PRESENTACIÓN - PRESS START -->
+    <!-- PANTALLA DE PRESENTACIÓN -> PRESS START -->
     <section id="fase1" class="seccionVisible">
     <div class="central">
         <div class="general general1">
@@ -25,11 +25,9 @@
     </div>
     </section>
 
-    <!-- PANTALLA DE PARRILLA DE PERSONAJES PARA SELECCIÓN -->
+    <!-- PANTALLA DE PARRILLA DE PERSONAJES PARA SELECCIÓN PLAYAR 1-->
     <section id="fase2" class="seccionVisible" style="display: none;">
-        <div class="sibeBars">
-            <div class="box"></div>
-            <div class="box"></div>
+        <div id="goodGuys" class="sibeBars">
             <div class="box"></div>
         </div>
         <div class="central">
@@ -40,48 +38,57 @@
             <div class="card"></div>
             <div class="card"></div>
             <div class="card"></div>
-            <div class="card"></div>
             <button onclick="CambiaPantalla(3)">
-                LET´S CHOOSE SOME PLAYERS
+                LET´S CHOOSE THE GOOD GUY
             </button>
         </div>
         </div>
-        <div class="sibeBars">
-            <div class="box"></div>
-            <div class="box"></div>
+    </section>
+
+
+    <!-- PANTALLA DE PARRILLA DE PERSONAJES PARA SELECCIÓN -->
+    <section id="fase3" class="seccionVisible" style="display: none;">
+        <div class="central">
+        <div class="general roster">
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+            <button onclick="CambiaPantalla(4)">
+                LET´S CHOOSE THE BAD GUY
+            </button>
+        </div>
+        </div>
+        <div id="badGuys" class="sibeBars">
             <div class="box"></div>
         </div>
     </section>
 
-    <!-- TERCERA LUCHA -->
-    <section id="fase3" class="seccionVisible" style="display: none;">
+    <!-- CUARTA PANTALLA -> LUCHA -->
+    <section id="fase4" class="seccionVisible" style="display: none;">
         <div class="general general3">
             <p>LET´S FIGHT!</p>
             <button onclick="Atacar()" id="ataque">
                 FIGHT!!!!
             </button>
-            <button onclick="CambiaPantalla(4)">
-                LET'S START AGAIN
+            <button onclick="CambiaPantalla(5)">
+                AND THE WINER IS..
             </button>
         </div>
     </section>
         <!-- LA LUCHA HA TERMINADO -->
-        <section id="fase4" class="seccionVisible" style="display: none;">
-            <div class="sibeBars">
-                <div class="box"></div>
-                <div class="box"></div>
-                <div class="box"></div>
-            </div>
+        <section id="fase5" class="seccionVisible" style="display: none;">
             <div class="general general4">
                 <p>GAME OVER</p>
-                <button onclick="CambiaPantalla(1)">
-                    LET'S START AGAIN
+                <p>PLAYER X WON THE BATTLE</p>
+                <button onclick="CambiaPantalla(2)">
+                    LET'S PLAY AGAIN!
                 </button>
-            </div>
-            <div class="sibeBars">
-                <div class="box"></div>
-                <div class="box"></div>
-                <div class="box"></div>
+                <button onclick="CambiaPantalla(1)">
+                    GO TO THE BEGINING
+                </button>
             </div>
         </section>
 </div>
