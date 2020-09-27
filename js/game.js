@@ -56,8 +56,8 @@ const blackAdam = new Fighter("Black Adam", 50, 125, 100, "./images/blackAdam.pn
 const shazham = new Fighter("Shazam", 50, 125, 100, "./images/shazam.png");
 
 
-const goodFighters = [superman,coolGirl,batman,theFlash];
-const evilFighters = [covid,docManhattan,sheep,freak];
+const goodFighters = [superman,coolGirl,batman,theFlash,shazham];
+const evilFighters = [covid,docManhattan,sheep,freak,blackAdam];
 
 let selectedFighters = [];
 const maxFighters = 2;
