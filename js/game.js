@@ -44,17 +44,20 @@ class Fighter{
 }
 
 
-const goku = new Fighter("Superman", 25, 50, 100, "./images/superman.png");
-const superman = new Fighter("Hipster Girl", 50, 125, 100, "./images/hipsterGirl.png");
+const superman = new Fighter("Superman", 50, 125, 100, "./images/hipsterGirl.png");
 const docManhattan = new Fighter("Dr Mantahhan", 99, 200, 100, "./images/drManhattan.png");
-const enki = new Fighter("Batman", 10, 50, 100, "./images/batman.png");
-const freak = new Fighter("Freak Guy", 200, 300, 100, "./images/superman.png");
-const sheep = new Fighter("Sheep", 0, 0, 100, "./images/superman.png");
-const covid = new Fighter("COVID-19", 1000, 1000, 100, "./images/superman.png");
+const batman = new Fighter("Batman", 10, 50, 100, "./images/batman.png");
+const theFlash = new Fighter("The Flash", 25, 50, 100, "./images/theFlash.png");
+const coolGirl = new Fighter("Hipster Girl", 30, 30, 100, "./images/hipsterGirl.png");
+const freak = new Fighter("Freak Guy", 20, 20, 100, "./images/hipsteBoy.png");
+const sheep = new Fighter("Sheep", 0, 0, 100, "./images/sheep.png");
+const covid = new Fighter("COVID-19", 1000, 1000, 100, "./images/covid19.png");
+const blackAdam = new Fighter("Black Adam", 50, 125, 100, "./images/blackAdam.png");
+const shazham = new Fighter("Shazam", 50, 125, 100, "./images/shazam.png");
 
 
-const goodFighters = [goku,superman,docManhattan,enki,freak,sheep];
-const evilFighters = [goku,superman,docManhattan,enki,freak,sheep];
+const goodFighters = [superman,coolGirl,batman,theFlash];
+const evilFighters = [covid,docManhattan,sheep,freak];
 
 let selectedFighters = [];
 const maxFighters = 2;
