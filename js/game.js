@@ -44,13 +44,13 @@ class Fighter{
 }
 
 
-const goku = new Fighter("superman", 25, 50, 100, "../images/superman.png");
-const superman = new Fighter("Hipster Girl", 50, 125, 100, "../images/hipsterGirl.png");
-const docManhattan = new Fighter("Dr Mantahhan", 99, 200, 100, "../images/drManhattan.png");
-const enki = new Fighter("Enki", 10, 50, 100, "../images/superman.png");
-const freak = new Fighter("Freak Guy", 200, 300, 100, "../images/superman.png");
-const sheep = new Fighter("Sheep", 0, 0, 100, "../images/superman.png");
-const covid = new Fighter("COVID-19", 1000, 1000, 100, "../images/superman.png");
+const goku = new Fighter("superman", 25, 50, 100, "./images/superman.png");
+const superman = new Fighter("Hipster Girl", 50, 125, 100, "./images/hipsterGirl.png");
+const docManhattan = new Fighter("Dr Mantahhan", 99, 200, 100, "./images/drManhattan.png");
+const enki = new Fighter("Enki", 10, 50, 100, "./images/superman.png");
+const freak = new Fighter("Freak Guy", 200, 300, 100, "./images/superman.png");
+const sheep = new Fighter("Sheep", 0, 0, 100, "./images/superman.png");
+const covid = new Fighter("COVID-19", 1000, 1000, 100, "./images/superman.png");
 
 
 const goodFighters = [goku,superman,docManhattan,enki,freak,sheep];
