@@ -1,5 +1,11 @@
+html{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    margin-top: 7.5vh;
+}
 body{
-    background-color: beige;
+    background-color: rgb(5, 5, 50);
     margin: 0;
 }
 .container{
@@ -9,12 +15,16 @@ body{
     flex-direction: column;
     align-items: center;
     align-content: center;
-    margin-top: 10vh;
+ }
+
+ .max-width{
+     max-width: 50vw;
  }
 
  .seccionVisible{
      display: flex;
      flex-direction: row;
+     align-items: center;
 }
 
 .sibeBars{
@@ -32,8 +42,8 @@ body{
     flex-direction: column;
     align-items: center;
     align-content: center;
-    width: 60vw;
-    height: 75vh;
+    width: 80vw;
+    height: 80vh;
 }
 
 .right{
@@ -46,13 +56,19 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    align-content:stretch;
+}
+
+.next > *{
+    padding: 2em;
+    margin: 5%;
 }
 
 .box{
-    width: 66%;
-    height: 10em;
+    width: 90%;
+    height: 100%;
     background-color: black;
-    margin: 3em;
+    margin: 1.5em;
 }
 
 .general1{
@@ -63,19 +79,31 @@ body{
 .roster{
     background-color:tomato;
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    flex-direction: row;
     overflow: hidden;
 }
 .card{
     display: flex;
     background-color: chartreuse;
-    width: 15em;
-    height: 15em;
+    width: 20vw;
+    height: 90%;
     margin: 1em;
-    background-position: top;
-    background-image: url("../images/superman-logo-computer-icons-clip-art-superman-png.jpg");
+    background-position: center;
+    background-size: 30em;
+    background-repeat: no-repeat;
+    background-image: url("../images/superman.png");
+    transition: width background-position;
+    transition: 0.75s ease-in-out;
 }
+.card:hover{
+    display: flex;
+    background-color: chartreuse;
+    width: 100%;
+    margin: 0.5em;
+    background-size: 50em;
+    background-position: top;
+}
+
 .general3{
     background-color: red;
 }
@@ -83,8 +111,10 @@ body{
     background-color:rgba(0, 0, 0, 0.5);
 }
 
-/* .central{
-} */
+.central{
+    padding: 1em;
+    background-color: rgba(255, 99, 71, 0.5);
+} 
 
 main{
     display: flex;

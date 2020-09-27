@@ -8,17 +8,16 @@
 <body>
 
 <div class="container">
+    
     <!-- PANTALLA DE PRESENTACIÓN -> PRESS START -->
     <section id="fase1" class="seccionVisible">
     <div class="central">
         <div class="general general1">
             <P>WELCOME TO THE ULTIMATE FIGHTING CLUB!</P>
             <div class="next">
-                <P>THE GOOD GUYS</P>
-                <h1>VS</h1>
-                <P>THE GOOD GUYS</P>
+                <img class="max-width" src="../images/title_Game.png" alt="The Good guys VS The Bad Guys">
                 <button onclick="CambiaPantalla(2)">
-                    LET`S GO!
+                    PRESS TO START
                 </button>
             </div>
         </div>
@@ -28,20 +27,22 @@
     <!-- PANTALLA DE PARRILLA DE PERSONAJES PARA SELECCIÓN PLAYAR 1-->
     <section id="fase2" class="seccionVisible" style="display: none;">
         <div id="goodGuys" class="sibeBars">
-            <div class="box"></div>
+            <div class="goodGuy box">
+                
+            </div>
         </div>
         <div class="central">
-        <div class="general roster">
+        <div id="goodRoster" class="general roster">
             <div class="card"></div>
             <div class="card"></div>
             <div class="card"></div>
             <div class="card"></div>
             <div class="card"></div>
             <div class="card"></div>
-            <button onclick="CambiaPantalla(3)">
-                LET´S CHOOSE THE GOOD GUY
-            </button>
         </div>
+        <button onclick="CambiaPantalla(3)">
+            LET´S CHOOSE THE GOOD GUY
+        </button>
         </div>
     </section>
 
@@ -49,20 +50,20 @@
     <!-- PANTALLA DE PARRILLA DE PERSONAJES PARA SELECCIÓN -->
     <section id="fase3" class="seccionVisible" style="display: none;">
         <div class="central">
-        <div class="general roster">
+        <div id="evilRoster" class="general roster">
             <div class="card"></div>
             <div class="card"></div>
             <div class="card"></div>
             <div class="card"></div>
             <div class="card"></div>
             <div class="card"></div>
-            <button onclick="CambiaPantalla(4)">
-                LET´S CHOOSE THE BAD GUY
-            </button>
         </div>
+        <button onclick="CambiaPantalla(4)">
+            LET´S CHOOSE THE BAD GUY
+        </button>
         </div>
         <div id="badGuys" class="sibeBars">
-            <div class="box"></div>
+            <div class="badGuy box"></div>
         </div>
     </section>
 
