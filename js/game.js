@@ -44,7 +44,7 @@ class Fighter{
 }
 
 
-const superman = new Fighter("Superman", 50, 125, 100, "./images/hipsterGirl.png");
+const superman = new Fighter("Superman", 50, 125, 100, "./images/superman.png");
 const docManhattan = new Fighter("Dr Mantahhan", 99, 200, 100, "./images/drManhattan.png");
 const batman = new Fighter("Batman", 10, 50, 100, "./images/batman.png");
 const theFlash = new Fighter("The Flash", 25, 50, 100, "./images/theFlash.png");
