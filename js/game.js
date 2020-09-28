@@ -71,7 +71,9 @@ let evilPlayers = "";
 
 const displayGoodPlayers = () =>{
     for (let fighter in goodFighters) {
-        goodPlayers += `<div class="card" onclick="selectGoodPlayer(${fighter})"id="fighter${fighter}" style="background-image: url('${goodFighters[fighter].image}');">  <div class="text">Name: ${
+        goodPlayers += `<div class="card" onclick="selectGoodPlayer(${fighter})
+        "id="fighter${fighter}" style="background-image: url('${goodFighters[fighter].image}');">
+        <div class="text">Name: ${
             goodFighters[fighter].name
         } </div> <div class="text">Resistency: ${
             goodFighters[fighter].resistencia

@@ -18,12 +18,11 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     font-size: 1.5em;
-    margin-top: 2em;
+    margin-top: 1em;
     font-family: 'Permanent Marker', cursive;
     padding: 0em 1em 0em 1em;
     text-align: center;
-    /* background-color: tomato;
-    mix-blend-mode: color-dodge; */
+    color: rgba(255, 99, 71, 0.5);
 }
 
 .title{
@@ -111,6 +110,7 @@ button:hover{
     background-color: rgba(0, 0, 0, 0.5);
     margin: 1.5em;
     color: white;
+    overflow: hidden;
 }
 
 .general1{
@@ -133,7 +133,7 @@ button:hover{
 }
 
 .roster{
-    background-color:#02308f;;
+    background-color:rgba(2, 49, 143, 0.25);;
     display: flex;
     flex-direction: row;
     overflow: hidden;
@@ -143,26 +143,28 @@ button:hover{
     flex-direction: column;
     align-items: center;
     align-content: center;
-    background-color: chartreuse;
+    background-color:rgba(0, 0, 0, 0.25);
     width: 20vw;
     height: 90%;
     margin: 1em;
     background-position: bottom;
     background-size: 15em;
     background-repeat: no-repeat;
-    background-image: url("../images/superman.png");
     transition: width background-position;
     transition: 0.75s ease-in-out;
 }
 .card:hover{
     display: flex;
-    background-color: chartreuse;
+    background-color: rgba(128, 255, 0, 0.5);
     width: 100%;
     margin: 0.5em;
     background-size: 50em;
     background-position: top;
 }
 
+.card:hover .text{
+    color: white;
+}
 
 .central{
     padding: 1em;
