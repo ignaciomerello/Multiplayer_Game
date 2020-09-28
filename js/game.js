@@ -83,6 +83,9 @@ const displayGoodPlayers = () =>{
       }
       rosterGoodFighters.innerHTML = goodPlayers;
     };
+
+displayGoodPlayers();  
+
 let goodGuys = document.getElementById("goodGuys");
 
 // const selectGoodPlayer = () => {
@@ -101,24 +104,55 @@ let goodGuys = document.getElementById("goodGuys");
 //   };
 
 
-// Esta funcion lo que hace es recorrer el array de seleccionados y pintarlos en el HTML
+// Esta debería recorrer el array de seleccionados y pintar el seleccionado en el HTML, pero no funciona...
+
+
+
+
 const selectGoodPlayer = () => {
     let selectedPlayer = "";
     for (let player of goodFighters) {
         selectedPlayer += `<div class="card" style="background-image: url('${player.image}');"> <div class="text">Name: ${player.name} </div>`;
     }
+
     player1Selected.innerHTML = selectedPlayer;
   };
   
-  /*
-      Funcion para el onClick, se le pasas como parametro la posicion en la que esta el PJ
-  */
+
+/*
+ONCLICK FUNCTION IN ORDER TO SELECT THE PLAYER 1 -> NOT WORKING
+*/
 
 
+
+
+
+//   const selectGoodPlayer = (pos) => {
+//     // Solo seleccionamos mientras no superemos el limite
+//     if (selectedFighters.length < maxFighters) {
+//         selectedFighters.push(goodFighters[parseInt(pos)]);
   
+//       //Como ya lo tenemos seleccionado, no queremos que se vuelva a seleccionar
+//       document.getElementById("card" + pos).style.pointerEvents = "none";
+//       document.getElementById("card" + pos).style.backgroundColor = "grey";
+  
+//       displayGoodPlayers();
+  
+//     }
+//   };
+  
+//   const asignToFight = () => {
+//     if (selectedFighters[0]) {
+//         fighter1 = selectedFighters[0];
+//     }
+  
+//     if (selectedFighters[1]) {
+//         fighter2 = selectedFighters[1];
+//     }
+//   };
 
   /*
-  ESTILO BOX DEL SELECCIONADO
+  ESTILO PARA APLICARLE AL BOX DEL PLAYER SELECCIONADO
 
 
     background-image: url(/images/blackAdam.png);
@@ -130,6 +164,7 @@ const selectGoodPlayer = () => {
   */
 
 //EVIL PLAYERS VIEW 3 - CHOOSING AN OPPONENT PLAYER
+let badGuys = document.getElementById("badGuys");
 
     const displayEvilPlayers = () =>{
         for (let fighter in evilFighters) {
@@ -145,20 +180,24 @@ const selectGoodPlayer = () => {
         };
 
 
-    // fighters.forEach(fighter => {
-    //     players += `<div class="card" id="fighter${fighter}" style="background-image=url("${fighters.fighter.img}")">
-    //     <div> Name: ${fighters.fighter.name}</di>
-    //     </div>` 
-    // });
-    // rosterFighters.innerHTML = players;
 
-    displayGoodPlayers();
+
+
+    const displayEvilPlayer = () => {
+        let selectedPlayer = "";
+        for (let player of evilFighters) {
+            selectedPlayer += `<div class="card" style="background-image: url('${player.image}');"> <div class="text">Name: ${player.name} </div>`;
+        }
+    
+        player2Selected.innerHTML = selectedPlayer;
+      };
+
     displayEvilPlayers();
 
 //SPLICE PARA SACAR EL FIGHTER DEL ARRAY
 
 const Atacar = () => {
-    goodFighters[0].recibirDaño(evilFighters[1].strenght);
+    goodFighters[0].recibirDaño(evilFighters[3].strenght);
     console.log(goodFighters[0].life);
 }
 
