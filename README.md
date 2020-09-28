@@ -41,10 +41,10 @@ let badGuys = document.getElementById("badGuys");
 ### Here you can see some captures from the game:
 
 #### Main View
-![alt text](../Multiplayer_Game/images/Main_View.png "Main View")
+![alt text](/images/Main_View.png "Main View")
 
 #### Choosing Player 1 View
-![alt text](../Multiplayer_Game/images/Choosing_Player_1_View.png "Main View")
+![alt text](/images/Choosing_Player_1_View.png "Main View")
 
 #### Choosing Player 2 View
-![alt text](../Multiplayer_Game/images/Choosing_Player_2_View.png "Main View")
+![alt text](/images/Choosing_Player_2_View.png "Main View")
